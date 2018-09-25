@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace NotificationService.API.DataAccess
 {
-    public class AttachmentDbContext
+    public class AttachmentDbContext:DbContext
     {
         public DbSet<Attachment> Attachments { get; set; }
     }

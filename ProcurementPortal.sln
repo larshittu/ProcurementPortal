@@ -5,9 +5,13 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Attachment", "Attachment", "{6E098FC2-B2F5-4AFB-B395-889776839E60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService.API", "NotificationService.API\NotificationService.API.csproj", "{78CBCC7E-4262-48FF-8F63-596B67BCC3AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotificationService.API", "NotificationService.API\NotificationService.API.csproj", "{78CBCC7E-4262-48FF-8F63-596B67BCC3AF}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8F52883D-BC57-46DE-AF0C-BB88669AB4AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcurementVendor", "ProcurementVendor\ProcurementVendor.csproj", "{CFD20572-3192-401B-9570-EFBC64BC879B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcurementAdmin", "ProcurementAdmin\ProcurementAdmin.csproj", "{AD9E3F16-17D4-4B92-8184-E830DCE85F15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,14 @@ Global
 		{8F52883D-BC57-46DE-AF0C-BB88669AB4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F52883D-BC57-46DE-AF0C-BB88669AB4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F52883D-BC57-46DE-AF0C-BB88669AB4AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD20572-3192-401B-9570-EFBC64BC879B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD20572-3192-401B-9570-EFBC64BC879B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD20572-3192-401B-9570-EFBC64BC879B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD20572-3192-401B-9570-EFBC64BC879B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD9E3F16-17D4-4B92-8184-E830DCE85F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9E3F16-17D4-4B92-8184-E830DCE85F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9E3F16-17D4-4B92-8184-E830DCE85F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9E3F16-17D4-4B92-8184-E830DCE85F15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

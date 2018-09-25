@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace NotificationService.API.Services
+namespace Attachment.API.FileStorage
 {
     interface IFileStorageService
     {
-        Task<string> Upload(IFormFile file);
+        Task<string> UploadAsync(IFormFile file);
     }
 }

@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
 namespace Attachment.API.Services
 {
-    interface IFileUploader
+    public interface IFileUploader
     {
-        Task Upload(IFormFileCollection files);
+        Task<IEnumerable<FileUploadResult>> Upload(IFormFileCollection files);
     }
-
 }

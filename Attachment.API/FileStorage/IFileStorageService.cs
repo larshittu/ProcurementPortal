@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Attachment.API.FileStorage
 {
-    interface IFileStorageService
+    public interface IFileStorageService
     {
         Task<string> UploadAsync(IFormFile file);
     }

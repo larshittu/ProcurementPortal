@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewBag.Title - Vendor Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/GeneralLanding/Login/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/GeneralLanding/Login/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/GeneralLanding/Login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/GeneralLanding/Login/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/GeneralLanding/Login/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/GeneralLanding/Login/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/GeneralLanding/Login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/GeneralLanding/Login/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+<header style="padding: 20px 112px; position: relative;">
+    <a href="#"><h1 style="display: inline-block;">Procurement Portal</h1></a>
+    <img style="position: absolute; left: 75%;" src="~/Content/Images/sterling_logo.png" />
+</header>
+    <div class="limiter">
+        <h3 style="text-align: center; padding-top: 50px">@ViewBag.Header</h3> 
+        <div class="container-login100">
+            @RenderBody()
+        </div>
+    </div>
+    <!--===============================================================================================-->
+    <script src="~/GeneralLanding/Login/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/GeneralLanding/Login/vendor/bootstrap/js/popper.js"></script>
+    <script src="~/GeneralLanding/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/GeneralLanding/Login/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/GeneralLanding/Login/vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="~/GeneralLanding/Login/js/main.js"></script>
+</body>
+</html>

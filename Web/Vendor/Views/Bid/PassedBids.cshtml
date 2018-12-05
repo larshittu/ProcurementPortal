@@ -1,0 +1,92 @@
+﻿@using System.Collections.Specialized
+
+@{
+    ViewData["Title"] = "Passed Bids";
+    ViewData["PageHeader"] = "My Passed Bids";
+}
+<div class="row row-cards">
+    
+</div>
+<div class="row row-deck">
+   <div class="col-lg-7 col-sm-12">
+       <div class="card ">
+           <div class="card-header">
+               <h3 class="card-title">Bids Growth Yearly</h3>
+           </div>
+           <div class="card-body">
+               <canvas id="lineChart1"></canvas>
+           </div>
+       </div>
+    </div>
+
+
+    <div class="col-sm-12 col-lg-5">
+        <div class="card ">
+            <div class="card-header">
+                <div class="card-title">Bids History List</div>
+            </div>
+            <div class="card-body">
+                <div class="visitor-list">
+                    <div class="media m-0">
+                        <div class="media-body">
+                            <a href="#" class="text-default font-weight-medium">Dell Laptops</a>
+                            <p class="text-muted ">@DateTime.Now.ToString("yyyy MMMM")</p>
+                        </div>
+                        <!-- media-body -->
+                        <span class="btn btn-green btn-sm mr-1">Bid Successful</span>
+                    </div>
+                    <div class="media m-0">
+                        <div class="media-body">
+                            <a href="#" class="text-default font-weight-medium">Projector</a>
+                            <p class="text-muted ">@DateTime.Now.AddMonths(-2).ToString("yyyy MMMM")</p>
+                        </div>
+                        <!-- media-body -->
+                        <span class="btn btn-red btn-sm mr-1">Bid Failed</span>
+                    </div>
+                    <div class="media m-0">
+                        <div class="media-body">
+                            <a href="#" class="text-default font-weight-medium">Dell Desktop</a>
+                            <p class="text-muted ">@DateTime.Now.AddMonths(-4).ToString("yyyy MMMM")</p>
+                        </div>
+                        <!-- media-body -->
+                        <span class="btn btn-green btn-sm mr-1">Bid Successful</span>
+                    </div>
+                    <div class="media m-0">
+                        <div class="media-body">
+                            <a href="#" class="text-default font-weight-medium">HP Laptops</a>
+                            <p class="text-muted ">@DateTime.Now.AddMonths(-6).ToString("yyyy MMMM")</p>
+                        </div>
+                        <!-- media-body -->
+                        <span class="btn btn-red btn-sm mr-1">Bid Failed</span>
+                    </div>
+                    <div class="media m-0">
+                        <div class="media-body">
+                            <a href="#" class="text-default font-weight-medium">HP Monitors</a>
+                            <p class="text-muted ">@DateTime.Now.AddMonths(-8).ToString("yyyy MMMM")</p>
+                        </div>
+                        <!-- media-body -->
+                        <span class="btn btn-red btn-sm mr-1">Bid Failed</span>
+                    </div>
+                </div>
+                <!-- media-list -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <!-- Charts Plugin -->
+    <script src="~/Template2/assets/plugins/chart/Chart.bundle.js"></script>
+    <script src="~/Template2/assets/plugins/chart/utils.js"></script>
+
+
+    <!-- Input Mask Plugin -->
+    <script src="~/Template2/assets/plugins/input-mask/jquery.mask.min.js"></script>
+
+    <script src="~/Template2/assets/js/index5.js"></script>
+
+    <!-- Custom scroll bar Js-->
+    <script src="~/Template2/assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Custom Js-->
+    <script src="~/Template2/assets/js/custom.js"></script>
+}

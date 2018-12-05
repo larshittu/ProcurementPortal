@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewData["Title"] = "Sigup Confirmation";
+    Layout = "~/Views/Shared/_Authentication.cshtml";
+}
+
+
+@if (!string.IsNullOrEmpty(ViewBag.Response))
+{
+    <script type="text/javascript">
+        alert("@ViewBag.Response");
+        // var url = '@Url.Action("Login")';
+        //window.location.href = url;
+    </script>
+}
+
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post, new {@class = "form-horizontal", role = "form"}))
+{
+    @Html.AntiForgeryToken()
+    <form class="container">
+        <div class="wrap-signup">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="wrap-input100">
+                        <input type="text" id="txt1" class="input100" placeholder="Company Name"/><span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="wrap-input100">
+                        <input type="text" id="txt1" class="input100" placeholder="RC Number"/><span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 10px 0px 0px 0px;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="wrap-input100">
+                        <input type="text" id="txt1" class="input100" placeholder="Telephone No"/><span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="wrap-input100">
+                        <input type="text" id="txt1" class="input100" placeholder="Email Address"/><span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 10px 0px 0px 0px;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="wrap-input100">
+                        <input type="text" id="txt1" class="input100" placeholder="Alternative Telephone"/><span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="wrap-input100">
+                        <input type="text" id="txt1" class="input100" placeholder="Alternative Email"/><span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 10px 0px 0px 0px;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="wrap-input100">
+                        <input type="password" id="txt1" class="input100" placeholder="Create Password"/><span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="wrap-input100">
+                        <input type="password" id="txt1" class="input100" placeholder="Confirm Password"/><span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-login100-form-btn">
+                <button class="login100-form-btn">
+                    Create Account
+                </button>
+            </div>
+        </div>
+    </form>
+}
+

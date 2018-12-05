@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Place Bid";
+    ViewData["PageHeader"] = "Bid Placement";
+
+}
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">#BID-287</h3>
+    </div>
+    <div class="card-body">
+        <p class="mg-b-20 mg-sm-b-40">
+            <h3>Bid Description</h3>
+            The datepicker is tied to a standard form input field. Click on the input to open an interactive calendar in a small overlay. If a date is chosen, feedback is shown as the input's value.
+        </p>
+        <div class="row">
+            <div class="col-md-6 col-lg-12">
+                <div class="form-group">
+                    <label class="form-label">Specification:</label>
+                    <textarea class="form-control" name="example-textarea-input" rows="3" placeholder="text here.."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Description: <span class="form-label-small"></span></label>
+                    <textarea class="form-control" name="example-textarea-input" rows="3" placeholder="text here.."></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group m-0">
+                            <label class="form-label">Quantity:</label>
+                            <input type="text" class="form-control" name="example-text-input-invalid"
+                                   placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group m-0">
+                            <label class="form-label">Amount:</label>
+                            <input type="text" class="form-control" name="example-text-input-invalid"
+                                   placeholder="Amount">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-right">
+        <div class="d-flex">
+            <a href="@Url.Action("Index")" class="btn btn-link">Cancel</a>
+            <button type="submit" class="btn btn-primary ml-auto">Submit Bid</button>
+        </div>
+    </div>
+</div>
+

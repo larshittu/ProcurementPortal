@@ -1,0 +1,58 @@
+﻿<div class="row row-cards">
+    <a href="@Url.Action("Index","Bid")" class="col-sm-12 col-lg-3">
+        <div class="card bg-success card-img-holder text-white">
+            <div class="card-body">
+                <img src="~/Template2/assets/images/circle.svg" class="card-img-absolute" alt="circle-image">
+                <h4 class="font-weight-normal  mb-3">
+                    Active Bids
+                    <i class="fa fa-user-o fs-30 float-right"></i>
+                </h4>
+                <h2 class="mb-0">145,789</h2>
+            </div>
+        </div>
+    </a>
+    <a href="@Url.Action("PassedBids","Bid")" class="col-sm-12 col-lg-3">
+        <div class="card bg-warning card-img-holder text-white">
+            <div class="card-body">
+                <img src="~/Template2/assets/images/circle.svg" class="card-img-absolute" alt="circle-image">
+                @*<h4 class="font-weight-normal  mb-3">
+                    Likes
+                    <i class="fa fa-heart-o fs-30 float-right"></i>
+                    </h4>
+                    <h2 class="mb-0">6,987</h2>*@
+                <div class="row">
+                    <div class="col-8"> <h4 class="font-weight-normal  mb-3">Successful Bids</h4></div>
+                    <div class="col-4"><h4 class="mb-0">15</h4></div>
+                </div>
+                <div class="row">
+                    <div class="col-8"><h4 class="font-weight-normal  mb-3">Fail Bids</h4></div>
+                    <div class="col-4"><h4 class="mb-0">8</h4></div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <div class="col-sm-12 col-lg-3">
+        <div class="card bg-info card-img-holder text-white">
+            <div class="card-body">
+                <img src="~/Template2/assets/images/circle.svg" class="card-img-absolute" alt="circle-image">
+                <h4 class="font-weight-normal mb-3">
+                    Comments
+                    <i class="fa fa-comment-o fs-30 float-right"></i>
+                </h4>
+                <h2 class="mb-0">78</h2>
+            </div>
+        </div>
+    </div>
+    <a href="@Url.Action("Buckets","Bid")" class="col-sm-12 col-lg-3">
+        <div class="card bg-primary card-img-holder text-white">
+            <div class="card-body">
+                <img src="~/Template2/assets/images/circle.svg" class="card-img-absolute" alt="circle-image">
+                <h4 class="font-weight-normal  mb-3">
+                    Buckets
+                    <i class="fa fa-paper-plane-o fs-30 float-right"></i>
+                </h4>
+                <h2 class="mb-0">345</h2>
+            </div>
+        </div>
+    </a>
+</div>

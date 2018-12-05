@@ -1,0 +1,51 @@
+﻿@model Vendor.ViewModels.TokenView
+
+@{
+    ViewBag.Title = "Token";
+    Layout = "~/Views/Shared/_Authentication.cshtml";
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.Response))
+{
+    <script type="text/javascript">
+        alert("@ViewBag.Response");
+        // var url = '@Url.Action("Token")';
+        //window.location.href = url;
+    </script>
+}
+
+
+
+
+
+@using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <form class="login100-form validate-form">
+        <div class="wrap-login100">
+            <span class="login100-form-title">
+                <img src="~/Content/Images/User_Login.png" style="width: 150px; height: 150px; opacity: 0.2;
+                                      filter: alpha(opacity=30);" />
+            </span>
+            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                @Html.TextBoxFor(m => m.TokenDescription, new { @class = "input100", @placeholder = "Token ID" })
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </span>
+            </div>
+
+            <div class="container-login100-form-btn">
+                <button class="login100-form-btn" href="@Url.Action("SigupConfirmation", "Account")">
+                    Proceed
+                </button>
+            </div>
+            <div class="text-center p-t-12">
+                <a class="txt2" href="#">
+                    I did not recieved Token? <a href="@Url.Action("ResendToken", "Account")"> Resend </a> | <a href="@Url.Action("SigupConfirmation", "Account")"> Proceed </a>
+                </a>
+            </div>
+        </div>
+    </form>
+}
+

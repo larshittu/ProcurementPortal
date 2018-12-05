@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewData["Title"] = "BidDeatil";
+    ViewData["PageHeader"] = "Bids Description";
+
+}
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">#BID-287</h3>
+    </div>
+
+    <div class="card-body">
+        <div class="row ">
+            <div class="col-lg-12 ">
+                <p class="h3">Sterling Bank Plc</p>
+                <address>
+                    Street Address<br>
+                    State, City<br>
+                    Region, Postal Code<br>
+                    ltd@example.com
+                </address>
+            </div>
+        </div>
+
+        <div class=" text-dark">
+            <p class="mb-1 mt-5"><span class="font-weight-semibold">Bid Open Date :</span> 12rd July 2018</p>
+            <p><span class="font-weight-semibold">Bid Due Date :</span> 15th July 2019</p>
+        </div>
+        <div class="table-responsive push">
+            <table class="table table-bordered table-hover">
+                <tbody>
+                
+                <tr>
+                    <td colspan="5" class="text-right">
+                        <a type="button" class="btn btn-primary" href="@Url.Action("PlaceBid")"><i class="si si-wallet"></i> Place Bid</a>
+                        <button type="button" class="btn btn-warning" onclick="javascript:window.print();"><i class="si si-printer"></i> Print Bid</button>
+                    </td>
+                </tr>
+                <tr class=" ">
+                    <th class="text-center " style="width: 1%"></th>
+                    <th>Product</th>
+                    <th class="text-center" style="width: 1%">Qnt</th>
+                    <th class="text-right" style="width: 1%">Unit</th>
+                    <th class="text-right" style="width: 1%">Budget</th>
+                </tr>
+                <tr>
+                    <td class="text-center">1</td>
+                    <td>
+                        <p class="font-w600 mb-1">Logo Creation</p>
+                        <div class="text-muted">Logo and business cards design</div>
+                    </td>
+                    <td class="text-center">1</td>
+                    <td class="text-right">$1,800.00</td>
+                    <td class="text-right">$1,800.00</td>
+                </tr>
+                <tr>
+                    <td class="text-center">2</td>
+                    <td>
+                        <p class="font-w600 mb-1">Online Store Design &amp; Development</p>
+                        <div class="text-muted">Design/Development for all popular modern browsers</div>
+                    </td>
+                    <td class="text-center">1</td>
+                    <td class="text-right">$20,000.00</td>
+                    <td class="text-right">$20,000.00</td>
+                </tr>
+                <tr>
+                    <td class="text-center">3</td>
+                    <td>
+                        <p class="font-w600 mb-1">App Design</p>
+                        <div class="text-muted">Promotional mobile application</div>
+                    </td>
+                    <td class="text-center">1</td>
+                    <td class="text-right">$3,200.00</td>
+                    <td class="text-right">$3,200.00</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="text-right">
+                        <a type="button" class="btn btn-primary" href="@Url.Action("PlaceBid")"><i class="si si-wallet"></i> Place Bid</a>
+                        <button type="button" class="btn btn-warning" onclick="javascript:window.print();"><i class="si si-printer"></i> Print Bid</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

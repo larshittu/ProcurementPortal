@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("index", "Home")">
+                <i class="fa fa-home"></i>
+                <span> DASHBOARD</span>
+            </a>
+        </li>
+        <li class="nav-item with-sub">
+            <a class="nav-link" data-toggle="dropdown" href="#"><i class="fa fa-file-text-o"></i><span>Settings</span></a>
+            <div class="sub-item">
+                <ul>
+                    <li><a href="@Url.Action("User","Setting")">Manage User</a></li>
+                    <li><a href="@Url.Action("Procurement","Setting")">Procurement Items</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item with-sub">
+            <a class="nav-link" data-toggle="dropdown" href="#"><i class="fa fa-file-text-o"></i> <span>Bidding Management</span></a>
+            <div class="sub-item">
+                <ul><li><a href="@Url.Action("NewBid","Bid")">New Bid</a></li>
+                    <li><a href="@Url.Action("BidExtension","Bid")">Bid Extension</a></li>
+                    <li><a href="@Url.Action("CloseBid","Bid")">Close Open Bid</a></li>
+                    <li><a href="@Url.Action("Recommendation","Bid")">Bid Recommendation</a></li>
+                    <li><a href="@Url.Action("WonReject","Bid")">Bids Won/Rejected</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item with-sub">
+            <a class="nav-link" data-toggle="dropdown" href="#"><i class="fa fa-file-text-o"></i><span>Approvers</span></a>
+            <div class="sub-item">
+                <ul>
+                    <li><a href="@Url.Action("BidApprove","Approver")">Approve Vendor Bids</a></li>
+                    <li><a href="@Url.Action("AwaitBid","Approver")">Awaiting Approval</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item with-sub">
+            <a class="nav-link" data-toggle="dropdown" href="#"> <i class="fa fa-file-text-o"></i><span>Token</span></a>
+            <div class="sub-item">
+                <ul>
+                    <li><a href="#">Admin Token</a></li>
+                    <li><a href="#">Vendor Token </a></li>
+                </ul>
+            </div>
+        </li>
+
+    </ul>
+</div>

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Buckets";
+    ViewData["PageHeader"] = "My Bucket";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Buckets List</h3> &nbsp;
+        <a class="btn btn-outline-primary" href="@Url.Action("EditBuckets")"><i class="fa fa-pencil mr-2"></i>Edit Bucket</a>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table card-table table-vcenter border text-nowrap">
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Bucket Name</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="store.html" class="text-inherit">Raw Material </a></td>
+                    <td>Material</td>
+                    <td><span class="status-icon bg-success"></span> Active</td>
+                </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="store.html" class="text-inherit">Technology Devices </a></td>
+                        <td>Technology</td>
+                        <td><span class="status-icon bg-success"></span> Active</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

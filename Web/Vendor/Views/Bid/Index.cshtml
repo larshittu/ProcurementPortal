@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    ViewData["PageHeader"] = "Active Bids";
+}
+
+<div class="row">
+    <div class="col-md-12 col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Bids List</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table card-table table-vcenter text-nowrap">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Budget</th>
+                            <th>Closing Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @{
+                        string[] tile = new[] { "Gavin Gibson", "Julian Kerr", "Cedric Kelly", "Samantha May", "Okolo Ike", "Alex John", "Femi Ade", "Cele Guy", "Festu Part", "Ola Shittu" };
+                        const int t = 10;
+                        for (var i = 0; i < t; i++)
+                        {
+                            var value = 450870 * i / t;
+                            var qt = i + t+3;
+                        <tr>
+                            <th scope="row">@i</th>
+                            <td>@tile[i]</td>
+                            <td>Associate Developer</td>
+                            <td>@qt</td>
+                            <td>@string.Format("{0:C}", value)</td>
+                            <td>@DateTime.Now.AddDays(i).ToLongDateString()</td>
+                            <td>
+                                <div class="media m-0">
+                                    <a href="@Url.Action("PlaceBid")" class="btn btn-green btn-sm mr-1">Bid Now</a>
+                                    <a href="@Url.Action("BidDeatil")" class="btn btn-warning btn-sm  d-none d-sm-block">View Bid</a>
+                                </div>
+                            </td>
+                        </tr>
+                        }
+                    }
+                    </tbody>
+                </table>
+            </div>
+            <!-- table-responsive -->
+        </div>
+    </div>
+</div>
+
